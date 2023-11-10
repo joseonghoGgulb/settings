@@ -1,0 +1,17 @@
+input {
+	file {
+		path => "/usr/share/logstash/test2.json"
+		codec => "json"
+		sincedb_path => "/dev/null"
+		mode => "read"
+		exit_after_read => true
+	}
+}
+# filter {
+# }
+output {
+	elasticsearch{
+			hosts => "localhost:9200"
+			index => "test3"
+		} 
+}
