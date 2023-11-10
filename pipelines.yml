@@ -1,0 +1,5 @@
+- pipeline.id: main
+  path.config: "/usr/share/logstash/config/*.conf"
+
+# - pipeline.id: my-pipeline_1
+#   path.config: "/usr/share/logstash/config/json-elasticsearch.conf"
